@@ -29,5 +29,19 @@
     }
   }
 }
+.leftlink {
+  width: 150px;
+  margin: 5px;
+}
+.largetext{
+  font-size: 20px;
+}
+
+.grayback{
+  background-color: lightblue;
+  border-radius: 10px;
+  padding: 10px;
+}
+
 @import'~bootstrap/dist/css/bootstrap.css'
 </style>

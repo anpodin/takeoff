@@ -4,28 +4,42 @@
     <div class="container">
       <div class="row">
       <div class="col-2">
-        1 of 3
+        <button type="button" class="btn btn-danger leftlink">Status 🔴️</button>
+        <br>
+        <br>
+        <button type="button" class="btn btn-secondary leftlink"><i class="fa fa-file-text-o
+        largetext"
+                                                           aria-hidden="true"></i>
+          <br>Опросы</button>
+        <button type="button" class="btn btn-secondary leftlink"><i class="fa fa-users largetext"
+                                                                    aria-hidden="true">
+        </i><br>Пользователи</button>
+        <button type="button" class="btn btn-secondary leftlink">
+          <i class="fa fa-flag-o largetext" aria-hidden="true"></i><br>Черные списки</button>
+        <button type="button" class="btn btn-secondary leftlink">
+          <i class="fa fa-phone largetext" aria-hidden="true"></i><br>Колл-центр</button>
       </div>
       <div class="col-8">
-        2 of 3 (wider)
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Поиск посистеме" aria-label=
-            "Recipient's username" aria-describedby="button-addon2">
-          <div class="input-group-append">
-            <button class="btn btn-outline-secondary" type="button" id="button-addon2">
-              &#x1F50D;</button>
+        <!--2 of 3 (wider)-->
+        <Survey search=" "/>
+          <div class="row">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">🏠️</a></li>
+                <li class="breadcrumb-item"><a href="#">Опросы</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Добавить опрос</li>
+              </ol>
+            </nav>
           </div>
-          <div>
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">🏠️</a></li>
-              <li class="breadcrumb-item"><a href="#">Опросы</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Добавить опрос</li>
-            </ol>
-          </nav>
-          </div>
+        <div class="row">
+          <div class="col-sm">Параметры</div>
+          <div class="col-sm">Вопросы</div>
+          <div class="col-sm">Логика</div>
+          <div class="col-sm">Условия</div>
+          <div class="col-sm">Респонденты</div>
         </div>
-        <div class="py-5 text-center">
+        <div class="py-5 text-center grayback">
+          Добавить опрос
           <div class="row">
             <div class="col-md-4 order-md-2 mb-4">
               <h4 class="d-flex justify-content-between align-items-center mb-3">
@@ -246,3 +260,15 @@
     </div>
   </div>
 </template>
+
+<script>
+// @ is an alias to /src
+import Survey from '@/components/Survey.vue';
+
+export default {
+  name: 'About',
+  components: {
+    Survey,
+  },
+};
+</script>
